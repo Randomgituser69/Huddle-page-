@@ -1,0 +1,121 @@
+  /* CSS Reset 👇 */
+    *, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+html, body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
+    /*CSS Styles 👇 */
+    body {
+      background-color: var(--Violet);
+      background-image: url(bg-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      font-family: 'Open Sans', sans-serif;
+    }
+     
+    :root {
+      --Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
+    }
+    main {
+      display: grid; 
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      
+    }
+    .right {
+      align-items: center; 
+        text-align: center;
+    }
+header img {
+  padding: 2rem;
+}
+.img img {
+  padding: 2rem;
+}
+   h1 {
+       font-family: 'Poppins', sans-serif;
+       font-weight: 600;
+     color: white;
+    }
+    p {
+      font-weight: 400;
+      color: white;
+    }
+    
+    .fa-brands {
+      color: white;
+      border: 1px solid white;
+      border-radius: 1rem;
+      padding: 5px;
+    } 
+    .fa-brands:hover {
+      color: hsl(300, 95%, 51%);; 
+      border: 1px solid hsl(300, 95%, 51%);;
+    }
+    .social {
+      display: flex; 
+      flex-direction: row;
+      justify-content: center;
+      gap: 10px;
+      margin: 1ch;
+    } 
+    button {
+      background-color: white; 
+      margin: 10px;
+      border: none;
+      width: 200px;
+      height: 50px;
+      color: var(--Violet);
+      border-radius: 30px;
+      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.25);
+      
+    }   button:hover {
+      background-color: var(--Soft-Magenta);
+      color: white;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    @media screen and (min-width: 37.5rem) {
+      body {
+      background-color: var(--Violet);
+      background-image: url(bg-desktop.svg);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      main {
+        padding: 75px 50px;
+      }
+      
+     .social {
+       justify-content: end;
+     }
+      .right {
+        width: 400px;
+      text-align: start;
+      align-items: start;
+      }
+      .right p {
+        width: 460px;
+      }
+    }
